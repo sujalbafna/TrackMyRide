@@ -1,0 +1,16 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Helper function to check if a user is signed in.
+    function isSignedIn() {
+      return request.auth != null;
+    }
+
+    // Wildcard match for all documents in the database.
+    // Allows any authenticated user to read and write any data.
+    match /{document=**} {
+      allow read, write: if isSignedIn();
+    }
+  }
+}
