@@ -49,7 +49,7 @@ export function MapView({ stops = [], bus: initialBus, userStop, onNavigationUpd
 
   const { isLoaded } = useJsApiLoader({
     id: 'google-map-script',
-    googleMapsApiKey: process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY || '',
+    googleMapsApiKey: 'AIzaSyA_zfRnZdq83nF6g6-LLYR3Uy3AM8wqAZ4',
     libraries,
   });
 

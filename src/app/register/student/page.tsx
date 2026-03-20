@@ -36,7 +36,7 @@ const studentRegisterSchema = userSchema.pick({
 function StudentFields() {
   const { control, setValue } = useFormContext();
   const [autocomplete, setAutocomplete] = useState<google.maps.places.Autocomplete | null>(null);
-  const apiKey = process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY;
+  const apiKey = 'AIzaSyA_zfRnZdq83nF6g6-LLYR3Uy3AM8wqAZ4';
 
   const { isLoaded, loadError } = useJsApiLoader({
     id: 'google-map-script',
