@@ -69,7 +69,7 @@ const UserActionsCell = ({ row }: { row: any }) => {
           <AlertDialogHeader>
             <AlertDialogTitle>Are you absolutely sure?</AlertDialogTitle>
             <AlertDialogDescription>
-              This will permanently delete the authentication account AND all associated data (attendance, fees, alerts) for{' '}
+              This will permanently delete the authentication account AND all associated data (attendance, alerts) for{' '}
               <strong>{user.firstName} {user.lastName}</strong>. 
               <br /><br />
               This action cannot be undone and will erase all history for this user from the database.
